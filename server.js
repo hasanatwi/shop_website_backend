@@ -1453,10 +1453,6 @@ return res.status(500).json({success: false, message: "Supabase error"});
     }
 });
 
-app.use("/api", specificProducts);
-app.use("/api", itemRouter);
-app.use("/api", userProductsRouter);
-
 app.get("/debug", (req, res) => {
   res.json({
     status: "Server running",
