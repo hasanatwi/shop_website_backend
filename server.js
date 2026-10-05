@@ -7,10 +7,7 @@ import session from "express-session";
 import dotenv from "dotenv";
 import cors from "cors";
 import multer from "multer";
-import specificProducts from "./specificProducts.js";
 import { createClient } from "@supabase/supabase-js";
-import itemRouter from "./Item.js";
-import userProductsRouter from "./userProducts.js";
 
 dotenv.config();
 
